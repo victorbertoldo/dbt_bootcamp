@@ -3,11 +3,12 @@
  materialized = 'view'
  )
 }}
-WITH src_hosts AS (
+
+WITH 
+src_hosts AS (
  SELECT
  *
- FROM
- {{ ref('src_hosts') }}
+ FROM {{ ref('src_hosts') }}
 )
 SELECT
  host_id,
@@ -18,5 +19,4 @@ SELECT
  is_superhost,
  created_at,
  updated_at
-FROM
- src_hosts
+FROM src_hosts

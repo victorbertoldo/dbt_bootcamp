@@ -33,3 +33,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_bootcamp:
+    src:
+      +materialized: ephemeral
+    dim:
+      +materialized: table
+    fct:
+      +materialized: table

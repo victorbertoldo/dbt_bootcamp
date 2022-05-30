@@ -1,0 +1,14 @@
+﻿version: 2
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://c7fca5d6.us2a.app.preset.io/superset/dashboard/p/1RmlZqGJyYq/
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('full_moon_reviews')
+    owner:
+      name: Victor Bertoldo
+      email: victor.bertoldo@none.com.xpto

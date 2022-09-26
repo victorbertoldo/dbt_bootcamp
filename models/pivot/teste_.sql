@@ -22,8 +22,8 @@ as p (Data, Partiu, Ficou, Outros)
 {{ this.schema }}
 
 {%- set tab = adapter.get_relation(
-      database=this.database,
-      schema=this.schema,
-      identifier="orders") -%}
+      database='SNOWFLAKE_SAMPLE_DATA',
+      schema='TPCH_SF10',
+      identifier='orders') -%}
 
 {{ tab }}

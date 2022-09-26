@@ -20,3 +20,10 @@ as p (Data, Partiu, Ficou, Outros)
 
 {{ this.database }}
 {{ this.schema }}
+
+{%- set tab = adapter.get_relation(
+      database=this.database,
+      schema=this.schema,
+      identifier="orders") -%}
+
+{{ tab }}

@@ -18,12 +18,3 @@ PIVOT (
 )
 as p (Data, Partiu, Ficou, Outros)
 
-{{ this.database }}
-{{ this.schema }}
-
-{%- set tab = adapter.get_relation(
-      database='SNOWFLAKE_SAMPLE_DATA',
-      schema='TPCH_SF10',
-      identifier='orders') -%}
-
-{{ tab }}

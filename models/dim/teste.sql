@@ -1,4 +1,4 @@
-{% set query %}
+{# {% set query %}
     select 
     *
     from AIRBNB.DEV.FCT_REVIEWS
@@ -9,4 +9,4 @@
 {%- if execute-%}
     {{ results.pivot(key='REVIEW_DATE', pivot='REVIEW_SENTIMENT') }}
 
-{%- endif -%}    
+{%- endif -%}     #}
